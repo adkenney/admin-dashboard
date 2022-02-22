@@ -17,7 +17,7 @@ body a {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 1.5rem;
-  padding: 16px;
+  padding: 1rem 2.5rem;
 }
 
 .header a {
@@ -41,7 +41,7 @@ body a {
 
 .small-profile {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
 }
@@ -106,14 +106,37 @@ body a {
 .sidebar {
   background-color: #059669;
   grid-row: 1 / 5;
-  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .sidebar-div ul,
 .secondary-sidebar ul {
   display: grid;
   gap: 1.5rem;
-  margin-top: 3.5rem;
+  justify-self: center;
+}
+
+.sidebar-div li,
+.secondary-sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .main-content {
